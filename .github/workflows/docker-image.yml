@@ -15,15 +15,15 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{secrets.DOCKERHUB_USERNAME}}/PSTclient
+      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_HUB_USERNAME}}/PSTclient
 
 
     - uses: actions/checkout@v1
     - name: Login to DockerHub Registry
-      run: echo ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+      run: echo ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
     
     - name: Docker push
-      run: docker push ${{DOCKERHUB_USERNAME}}/PSTclient
+      run: docker push ${{DOCKER_HUB_USERNAME}}/PSTclient
      
     
     
