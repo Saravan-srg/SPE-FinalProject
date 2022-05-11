@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker buildx build . --file Dockerfile --platform linux/amd64 --tag ${{secrets.DOCKER_HUB_USERNAME}}/pst_client
+      run: docker buildx build . --file Dockerfile --platform linux/x86_64 --tag ${{secrets.DOCKER_HUB_USERNAME}}/pst_client
 
 
     - uses: actions/checkout@v1
