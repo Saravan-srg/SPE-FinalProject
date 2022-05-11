@@ -1,0 +1,8 @@
+---
+- name: Pull docker image from dockerHub
+  hosts: all
+  tasks:
+    - name: Pull docker image
+      docker_image: 
+        name: saravansrg/pst_client
+        source: pull
