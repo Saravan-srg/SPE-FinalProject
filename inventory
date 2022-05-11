@@ -1,2 +1,0 @@
-[ec-2]
-ec2-3-88-182-194.compute-1.amazonaws.com ansible_user=deploy
