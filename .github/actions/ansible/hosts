@@ -1,5 +1,5 @@
 [ec2]
-ec2-3-208-20-191.compute-1.amazonaws.com
+54.172.195.252
 
 [all:vars]
 ansible_connection=ssh
