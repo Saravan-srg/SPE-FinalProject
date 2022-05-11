@@ -1,2 +1,2 @@
 [ec-2]
-ec2-204-236-220-210.compute-1.amazonaws.com ansible_user=ubuntu ansible_ssh_private_key_file=./spe_project.pem
+ec2-3-88-182-194.compute-1.amazonaws.com ansible_user=ubuntu ansible_ssh_private_key_file=./spe_project.pem
