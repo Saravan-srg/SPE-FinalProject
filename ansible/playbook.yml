@@ -1,15 +1,8 @@
 ---
-- hosts: all
-  become: true
-
+- name: Pull docker image from dockerHub
+  hosts: all
   tasks:
-    - name: Stop the running docker
-      shell: docker stop pst_client
-    - name: Remove the docker
-      shell: docker rm -f pst_client
-    - name: Remove image of the docker
-      shell: docker image rm -f saravansrg/pst_client:latest
-
-    - name: Download the latest docker and run
-      shell: docker run -d -p 2000:2000 --name pst_client saravansrg/pst_client:latest
-
+    - name: Pull docker image
+      docker_image: 
+        name: saravansrg/pst_client
+        source: pull
