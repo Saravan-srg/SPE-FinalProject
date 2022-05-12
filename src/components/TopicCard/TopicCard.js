@@ -123,9 +123,7 @@ export default function TopicCard({ questionData }) {
                     Total Questions: {questions.length}
                   </Card.Text>
                   <p className="percentDone mb-1">
-                    {/* <b>
-                      <i>Not yet started</i>
-                    </b> */}
+                    
                   </p>
                 </Card.Body>
               </Card>
@@ -137,12 +135,6 @@ export default function TopicCard({ questionData }) {
   });
   return (
     <>
-      {/* <h3 className="app-heading2 text-center mb-3">
-        Your Gateway to crack DSA{" "}
-        <span role="img" aria-label="fire">
-          🔥
-        </span>
-      </h3> */}
 
       <h4 className="text-center mb-4">
         {totalSolved

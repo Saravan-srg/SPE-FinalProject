@@ -90,9 +90,7 @@ function App() {
 	return (
 		<Router>
 			<div className={dark ? "App dark" : "App"}>
-				{/* <h1 className="app-heading text-center mt-5" style={{ color: dark ? "white" : "" }}>
-					450 DSA Cracker
-				</h1> */}
+				
 				<nav className="navbar navbar-dark bg-dark mb-3">
   					<Link to="/" className="navbar-brand mb-0 h1">Problem Solving Tracker</Link>
 					  
@@ -121,14 +119,7 @@ function App() {
 									</span>
 								)}
 							</Badge>{" "}
-							{/* <Link to="/about">
-								<Badge pill variant="light" className="hvr-grow">
-									About{" "}
-									<span role="img" aria-label="face-with-monocole" className="emojiFix">
-										🧐
-									</span>
-								</Badge>
-							</Link> */}
+							
 						</h4>
 
 						<div className="btn-group">
@@ -187,7 +178,7 @@ function App() {
 						</ThemeContext.Provider>
 					</>
 				)}
-				{/* <Footer dark={dark} setDark={setDark}></Footer> */}
+				
 			</div>
 		</Router>
 	);
