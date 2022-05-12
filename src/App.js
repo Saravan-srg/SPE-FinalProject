@@ -5,8 +5,8 @@ import { saveAs } from "file-saver";
 import Spinner from "react-bootstrap/Spinner";
 import TopicCard from "./components/TopicCard/TopicCard";
 import Topic from "./components/Topic/Topic";
-import About from "./components/About/About";
-import Footer from "./components/Footer/Footer";
+//import About from "./components/About/About";
+//import Footer from "./components/Footer/Footer";
 import Badge from "react-bootstrap/Badge";
 import { Link } from "react-router-dom";
 import ReactGA from "react-ga";
@@ -147,7 +147,7 @@ function App() {
 						<ThemeContext.Provider value={dark}>
 							{/* HOME AND ABOUT ROUTE */}
 							<Route exact path="/" children={<TopicCard questionData={questionData}></TopicCard>} />
-							<Route
+							{/* <Route
 								path="/about"
 								children={
 									<About
@@ -157,7 +157,7 @@ function App() {
 										setQuestionData={setquestionData}
 									></About>
 								}
-							/>
+							/> */}
 
 							{/* TOPIC ROUTE */}
 							<Route path="/array" children={<Topic data={questionData[0]} updateData={updateData} />} />
